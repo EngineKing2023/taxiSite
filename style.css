@@ -1,5 +1,5 @@
 * {
-    border: solid red 2px; 
+    
 background-color: black;
 margin: 0px;
 padding: 0px;
@@ -92,7 +92,7 @@ a{
     .center{
         display: flex;
         justify-content: center;
-        //margin-bottom: 20vh;
+      
         height: 100vh;
     }
 
