@@ -3,19 +3,37 @@
 background-color: black;
 margin: 0px;
 padding: 0px;
+
 } 
+
 .div{
- margin: 0px;
- padding: 0px;
+
  
 }
+ h1{
+          color: white;
+          margin: 1vw;
+ }
+h2{
+          color: white;
+         }
+         
+   h3{      
+   color: white;
+         }       
+
+p{
+          font-size: 16px;
+          color: white;
+          margin: 1vw 2vw;
+         }
+
 a{
     
     -webkit-tap-highlight-color: transparent;
 }
 img{
-    margin: 0;
-    padding: 0;
+    display: block  ;
     
     
 }
@@ -26,17 +44,126 @@ img{
     width: 3vw;
     height: 3vw;
 }
-.center{
+.hide{
+    display: none;
+}
+.aboutUs{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+      
+       }
+
+ .slika{
+          width: 30vw;
+            height: 30vw;
+          
+         }       
+.button1{
+            display: block;
+            justify-content: center;
+            align-items: center;    
+           
+            position: absolute;
+            bottom: 30%;
+            left: 1vw;
+            padding: 1vw;
+            
+            
+            
+            width: auto;
+            height: 6vw;
+                  font-size:3vw;
+                  margin: 0vw ;
+                  
+                  cursor: pointer;
+                  font-family: sans-serif, cursive;
+                  text-decoration: none;
+                  color: hsl(224, 100%, 34%);
+                  border: hsl(224, 100%, 34%) 3px solid;
+                  background-color:transparent;
+                  border-radius: 1em;
+                  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+                  box-shadow: inset 0 0 0.5em 0 hsl(224, 100%, 34%), 0 0 0.5em 0 hsl(224, 100%, 34%);
+                  transition:all 0.5s;
+      
+            
+       }
+                  .button1:hover{
+                    background-color:hsl(224, 100%, 34%);
+                    color:#fff;
+                }
+.close{
+          width: 33vw;
+          height: 15vw;
+          
+          cursor: pointer;
+            font-family: sans-serif, cursive;
+            text-decoration: none;
+            color: hsl(0, 100%, 50%);
+            border: hsl(0, 100%, 50%) 3px solid;
+            background-color:transparent;
+            border-radius: 1em;
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+            box-shadow: inset 0 0 0.5em 0 hsl(0, 100%, 50%), 0 0 0.5em 0 hsl(0, 100%, 50%);
+            transition:all 0.5s;
+        }                
+.btt{
+        
+          -webkit-user-select: none; /* Safari */        
+          -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+          user-select: none; /* Standard */
+            
+       }  
+ .btt2{
+          position: absolute;
+          right: 3vw;
+          bottom: 3vw;
+       }     
+       
+         #btn{
+            font-size:2vw;
+            
+            padding: 3px;
+            margin-top: 0.5vw;
+            margin-bottom: 1vw;
+            height: 4vw;
+            width:12vw;
+           
+            cursor: vertical-text;
+            font-family: sans-serif, cursive;
+            text-decoration: none;
+            color: hsl(122, 100%, 50%);
+            border: hsl(122, 100%, 50%) 3px solid;
+            background-color:transparent;
+            border-radius: 0.25em;
+            text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+            box-shadow: inset 0 0 0.5em 0 hsl(122, 100%, 50%), 0 0 0.5em 0 hsl(122, 100%, 50%);
+            transition:all 0.5s;
+       }
+       #btn:hover{
+            background-color:hsl(122, 100%, 50%);
+            color:#fff;}
+ 
+.container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
 .size{
     
-    width: 60vw; 
-    height: 60vw; 
+    width: 30vw; 
+    height: 30vw; 
 }
 .phoneIcon{
     display: none;
@@ -46,7 +173,7 @@ img{
 
 
 
-@media (max-width:2000px){
+@media (max-width:1700px){
 
 
     .size{
