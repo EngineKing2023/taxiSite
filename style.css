@@ -10,6 +10,9 @@ padding: 0px;
 
  
 }
+.mySlides {
+  display: none;
+}
  h1{
           color: white;
           margin: 1vw;
@@ -415,13 +418,14 @@ a{
     -webkit-tap-highlight-color: transparent;
     
 }
-@media (max-width:700px) and (orientation:landscape){
+@media (orientation:landscape){
    
     .container{
         display: none;
     }
+
  .slideshow-container {
-    display: block;
+    
           max-width: 80%;
           position: relative;
           margin: auto;}
