@@ -506,6 +506,11 @@ img{
             color:#fff;
             height: 12vw;
             width:27vw;
+            
+        }
+        #btn:not(:hover){
+            height: 10.5vw;
+            width:26vw;
         }
     .size{
     
