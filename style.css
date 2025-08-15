@@ -3,16 +3,73 @@
 background-color: black;
 margin: 0px;
 padding: 0px;
-
-} 
-
-.div{
-
- 
 }
-.mySlides {
-  display: none;
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+ }
+ img{
+    width: 30vw;
+    height: 30vw;
+
 }
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #000000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
  h1{
           color: white;
           margin: 1vw;
@@ -47,9 +104,7 @@ img{
 .hide{
     display: none;
 }
-.slideshow-container{
-    display: none;
-}
+
 .aboutUs{
             width: 100%;
             height: 100vh;
@@ -136,7 +191,7 @@ img{
             padding: 3px;
             margin-top: 0.5vw;
             margin-bottom: 0.5vw;
-            height: 4vw;
+            height: 5vw;
             width:12vw;
            
             cursor: vertical-text;
@@ -161,15 +216,7 @@ img{
     }
 
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-}
+
 .size{
     
     width: 32vw; 
@@ -375,7 +422,15 @@ img{
 }
 @media (max-width:700px) {
    
-    
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
    
    #btn{
     font-size:7vw;
@@ -404,8 +459,7 @@ img{
         }
     .size{
     
-    width: 60vw; 
-    height: 60vw; 
+    
 }
 
 
@@ -418,50 +472,9 @@ a{
     -webkit-tap-highlight-color: transparent;
     
 }
-@media (orientation:landscape){
-   
-    .container{
-        display: none;
-    }
+img{
+    width: 60vw;
+    height: 60vw;
 
- .slideshow-container {
-    
-          max-width: 80%;
-          position: relative;
-          margin: auto;}
-
-          .numbertext {
-               color: #f2f2f2;
-               font-size: 12px;
-               padding: 8px 12px;
-               position: absolute;
-               top: 0;
-             }
-             
-             /* The dots/bullets/indicators */
-             .dot {
-               height: 15px;
-               width: 15px;
-               margin: 0 2px;
-               background-color: #bbb;
-               border-radius: 50%;
-               display: inline-block;
-               transition: background-color 0.6s ease;
-             }
-             
-             .active {
-               background-color: #717171;
-             }
-             
-             /* Fading animation */
-             .fade {
-               animation-name: fade;
-               animation-duration: 2s;
-             }
-             
-             @keyframes fade {
-               from {opacity: .4} 
-               to {opacity: 1}
-             }
 }
 }
