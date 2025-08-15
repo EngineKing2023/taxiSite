@@ -1,3 +1,7 @@
+
+
+
+
 let theSong = document.getElementById("song");
 let logo = document.getElementById("logo");
 let myDocument = document.documentElement;
@@ -6,6 +10,7 @@ let button1 =document.querySelector(".button1");
 let close =document.querySelector(".close");
 let aboutUs = document.querySelector(".aboutUs");
 let isShowAboutUs = true;
+let a =document.querySelector("a");
 
 
 
