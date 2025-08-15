@@ -427,14 +427,14 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     height: 100vh;
-    margin: 0px;
-    padding: 0px;
 }
    .slideshow-container {
   
-  position: relative;
-  margin: auto;
+ display: flex; 
+ align-items: center;
+    justify-content: center;
 }
 
 /* Caption text */
@@ -485,8 +485,8 @@ img{
    #btn{
     font-size:7vw;
     padding: auto;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
     height: 10.5vw;
     width:26vw;
    
