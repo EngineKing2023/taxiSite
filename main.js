@@ -61,6 +61,7 @@ function showSlides() {
 function showAboutUs(){
     if(isShowAboutUs){
         container3.style.display = "none";
+        container2.style.display = "none";
         aboutUs.style.display ="flex";
         aboutUs.style.position = "absolute";
         
@@ -71,6 +72,7 @@ function closeAboutUs(){
     if(closeAboutUs){
         aboutUs.style.display ="none";
         container3.style.display = "flex";
+        container2.style.display = "flex";
         isShowAboutUs = true;
     }
 }
@@ -96,6 +98,8 @@ function closeContact(){
 }
 function showEngine(){
     if(isShowEngine){
+        container2.style.display = "none";
+        
         engine.style.display ="flex";
         engine.style.position = "absolute";
         isShowEngine = false;
@@ -103,6 +107,8 @@ function showEngine(){
 }
 function closeEngine(){
     if(closeEngine){
+        container2.style.display = "flex";
+        
         engine.style.display ="none";
         isShowEngine = true;
     }
@@ -166,7 +172,7 @@ btn.addEventListener("click",()=>{
 
 
 
-        
+         container2.style.display = "flex";
         button1.style.display="block";
         button2.style.display="block";
         button3.style.display="block";
@@ -193,7 +199,7 @@ btn.addEventListener("click",()=>{
 
 
 
-            
+            container2.style.display = "none";
             button1.style.display="none";
             button2.style.display="none";
             button3.style.display="none";
