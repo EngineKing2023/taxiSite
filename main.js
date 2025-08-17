@@ -131,6 +131,11 @@ function closePlumber(){
         isShowPlumber = true;
     }
 }
+function close_window() {
+  if (confirm("Close Window?")) {
+    close();
+  }
+}
 
 btn.addEventListener("click",()=>{
     if(btn.textContent == "Vstopi" ){
