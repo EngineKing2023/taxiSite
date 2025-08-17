@@ -5,6 +5,9 @@ margin: 0px;
 padding: 0px;
 
 }
+.logo{
+    cursor: pointer;
+}
  .container{
     display: flex;
     flex-direction: column;
@@ -729,7 +732,10 @@ p{
     width: 60vw;
     height: 60vw;
 
-}  .inlin{
+} 
+
+
+.inlin{
         display: static;
         
   
@@ -1083,7 +1089,7 @@ a{
             display: none;
             width: 33vw;
             height: 15vw;
-            font-size:7vw;
+            font-size:6vw;
             margin: 0vw 3vw 3vw 5vw;
             cursor: pointer;
             font-family: sans-serif, cursive;
@@ -1125,8 +1131,8 @@ a{
         }
         .close
         {
-          width: 33vw;
-          height: 15vw;
+          width: 25vw;
+          height: 14vw;
           
           cursor: pointer;
             font-family: sans-serif, cursive;
@@ -1160,7 +1166,19 @@ a{
           position: absolute;
           -webkit-tap-highlight-color: transparent;
           right: 3vw;
-          top: 3vw;
-          padding: 6px;
-       }        
+          bottom: 3vw;
+          
+       }  
+   
+       .logo{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    width: 7vw;
+    height: 7vw;
+    
+    
+              -webkit-tap-highlight-color: transparent;
+
+}      
 }

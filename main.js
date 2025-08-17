@@ -24,6 +24,20 @@ let plumber = document.querySelector(".plumber");
 let isShowPlumber = true;
 
 
+let theSong = document.getElementById("song");
+let logo = document.querySelector(".logo");
+logo.onclick= function(){
+    
+    if(theSong.paused){
+        
+        theSong.play();
+        logo.src = "images/POUS.png"
+    }
+    else{
+        theSong.pause();
+        logo.src= "images/PLY.png";
+
+    }}
 
 
 
@@ -131,11 +145,7 @@ function closePlumber(){
         isShowPlumber = true;
     }
 }
-function close_window() {
-  if (confirm("Close Window?")) {
-    close();
-  }
-}
+
 
 btn.addEventListener("click",()=>{
     if(btn.textContent == "Vstopi" ){
